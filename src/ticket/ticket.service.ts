@@ -54,17 +54,17 @@ export class TicketService {
       .populate("event_id");
   }
 
-  findOne(id: number) {
+  findOne(id: string) {
     return this.ticketSchema.findById(id);
   }
 
-  update(id: number, updateTicketDto: UpdateTicketDto) {
+  update(id: string, updateTicketDto: UpdateTicketDto) {
     return this.ticketSchema.findByIdAndUpdate(id, updateTicketDto, {
       new: true,
     });
   }
 
-  remove(id: number) {
+  remove(id: string) {
     return this.ticketSchema.findByIdAndDelete(id);
   }
 }

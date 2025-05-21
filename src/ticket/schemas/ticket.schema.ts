@@ -1,4 +1,3 @@
-
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import mongoose, { HydratedDocument } from "mongoose";
 import { Seat } from "../../seat/schemas/seat.schema";
@@ -36,4 +35,3 @@ export class Ticket {
   status_id: TicketStatus;
 }
 export const TicketSchema = SchemaFactory.createForClass(Ticket);
-

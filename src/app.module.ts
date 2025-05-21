@@ -20,6 +20,11 @@ import { LangModule } from './lang/lang.module';
 import { EventTypeModule } from './event_type/event_type.module';
 import { TicketStatusModule } from './ticket_status/ticket_status.module';
 import { TicketModule } from './ticket/ticket.module';
+import { PaymentMethodModule } from './payment_method/payment_method.module';
+import { DeliveryMethodModule } from './delivery_method/delivery_method.module';
+import { CardModule } from './card/card.module';
+import { BookingModule } from './booking/booking.module';
+import { CartItemModule } from './cart_item/cart_item.module';
 
 
 @Module({
@@ -43,7 +48,12 @@ import { TicketModule } from './ticket/ticket.module';
     LangModule,
     EventTypeModule,
     TicketStatusModule,
-    TicketModule
+    TicketModule,
+    PaymentMethodModule,
+    DeliveryMethodModule,
+    CardModule,
+    BookingModule,
+    CartItemModule
   ],
   controllers: [],
   providers: [],
